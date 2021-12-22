@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}    
+
+:root {
+  --headerColor: #0081a7;
+  --headerText: #FFFFFF;
+  --bannerText: #00afb9;
+  --bkgdcolor: #fdfcdc;
+}      
+
+.card header {
+  padding: 20px;
+  background: #13293d;
+  color: #fff;
+}
+
+.card img {
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial;
+  justify-content: flex-start;
+  line-height: 1;
+  margin: 0;
+  min-height: 100%;
+}    
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: var(--headerColor);
+  color: var(--headerText);
+}    
+
+html {
+  height: 100%;
+}    
+
+img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  margin: 0 auto;
+  border-style: solid;
+  border-width: 2px;
+}  
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}        
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+  list-style-type: none;
+}    
+
+nav a {
+  color: var(--bannerText);
+  font-weight: bold;
+  text-decoration: none;
+}    
+
+nav a:hover {
+  color: #fff;
+}    
+
+section {
+  display: flex;
+  justify-content: center;
+  max-width: 90%;
+  margin: 25px 0;
+}    
+
+.card {
+  padding: 10px;
+  width: 250px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+}  
+

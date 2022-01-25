@@ -124,7 +124,7 @@ nav ul {
 /* HERO SECTION */
 .hero {
   align-items: center;
-  background-image: url(/assets/images/codebkgd.gif);
+  background-image: url("/assets/images/codebkgd.gif");
   display: flex;
   height: 300px;
   justify-content: center;

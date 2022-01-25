@@ -5,11 +5,15 @@
   padding: 0;
 }
 :root {
-  --headerBkgd: #008000;
-  --headerHoverText: #ccff33;
+  /* --headerBkgd: #008000; */
+  --headerBkgd: black;
+  /* --headerHoverText: #ccff33; */
+  --headerHoverText: white;
   --headerText: #70e000;
+  --heroBorder: #70e000;
   --mainText:#70e000;
-  --pageBkgd:#006400;
+  /* --pageBkgd:#006400; */
+  --pageBkgd: black;
   --cardBkgd: black;
 }
 body {
@@ -124,6 +128,7 @@ nav ul {
 /* HERO SECTION */
 .hero {
   align-items: center;
+  border: 10px solid var(--heroBorder);
   background-image: url(https://techcrunch.com/wp-content/uploads/2019/03/final-gif.gif?w=1390&crop=1);
   display: flex;
   height: 300px;

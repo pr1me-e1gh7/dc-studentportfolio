@@ -1,95 +1,200 @@
 * {
   box-sizing: border-box;
+  line-height: 30px;
   margin: 0;
   padding: 0;
-}    
-
+}
 :root {
-  --headerColor: #0081a7;
-  --headerText: #FFFFFF;
-  --bannerText: #00afb9;
-  --bkgdcolor: #fdfcdc;
-}      
-
-.card header {
-  padding: 20px;
-  background: #13293d;
-  color: #fff;
+  --headerBkgd: #008000;
+  --headerHoverText: #ccff33;
+  --headerText: #70e000;
+  --mainText:#70e000;
+  --pageBkgd:#006400;
+  --cardBkgd: black;
 }
-
-.card img {
-  width: 100%;
-}
-
 body {
+  background-color: var(--pageBkgd);
   display: flex;
   flex-direction: column;
-  font-family: Arial;
-  justify-content: flex-start;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
   margin: 0;
   min-height: 100%;
 }    
-
 header {
+  align-items: center;
+  background-color: var(--headerBkgd);
+  color: var(--headerText);
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 1%;
-  background-color: var(--headerColor);
-  color: var(--headerText);
-}    
-
+}
 html {
   height: 100%;
-}    
+}
+main {
+  color: var(--mainText);
+  display: flex;
+  flex-direction: column;
+  font-size: 120%;
+  margin: 0 auto;
+  max-width: 1200px;
+}  
+ol, ul {
+  list-style-type: none;
+}
 
+/* PAGE PROPERTIES */
+.flex {
+  display: flex;
+}
+.flex-center {
+  justify-content: center;
+}
+header h1 {
+  font-weight: bolder;
+}
 img {
+  align-items: center;
+  border-style: solid;
+  border-width: 2px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  width: 100px;
   margin: 0 auto;
-  border-style: solid;
-  border-width: 2px;
-}  
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}        
-
-nav ul {
-  display: flex;
-  justify-content: space-between;
-  min-width: 300px;
-  list-style-type: none;
-}    
-
-nav a {
-  color: var(--bannerText);
-  font-weight: bold;
-  text-decoration: none;
-}    
-
-nav a:hover {
-  color: #fff;
-}    
-
+  width: 100px;
+}
 section {
   display: flex;
   justify-content: center;
-  max-width: 90%;
   margin: 25px 0;
-}    
+  max-width: 90%;
+}
+.section-content {
+  flex: 1 0 75%;
+  flex-wrap: wrap;
+  padding-left: 25px;
+  transition: background-color ease 0.2s;
+}
+.section-content > figure {
+  margin: 6px;
+}
+.section-left {
+  align-self: center;
+  flex: 25%;
+  text-align: right;
+  padding-right: 20px;
+}
+.section-right {
+  border-left: 15px groove var(--mainText);
+  flex: 75%;
+  flex-wrap: wrap;
+  padding-left: 30px;
+}
+.section-title {
+  flex: 1 0 25%;
+  align-self: center;
+  text-align: right;
+  padding-right: 20px;
+}
 
-.card {
-  padding: 10px;
-  width: 250px;
-  text-align: center;
-  border-style: solid;
-  border-width: 1px;
+/* NAVBAR */
+header h1 {
+  font-size: 250%;
 }  
+header li {
+  font-size: 150%;
+  margin: 10px;
+}
+nav a {
+  color: var(--headerText);
+  font-weight: bold;
+  text-decoration: none;
+}
+nav a:hover {
+  color: var(--headerHoverText);
+}  
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  min-width: 300px;
+}
 
+/* HERO SECTION */
+.hero {
+  align-items: center;
+  background-image: url(/assets/images/codebkgd.gif);
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  width: 100%;
+}    
+.hero img {
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+}    
+.hero img,
+.hero-content {
+  margin: 10px;
+}
+.hero-content {
+  color: white;
+  font-weight: bold;
+}
+.hero-content p {
+  font-size: 1.1rem;
+  font-style: italic;
+  line-height: 1;
+}
+
+/* PROJECTS SECTION */
+.card-content {
+  background-color: var(--cardBkgd);
+  bottom: 20px;
+  left: -1px;
+  padding: 20px 12px;
+  position: absolute;
+}
+.card-image {
+  border: black;
+  filter: grayscale(100%);
+  height: 100%;
+  object-fit: cover;
+  -webkit-filter: grayscale(100%);
+  width: 100%;
+  z-index: -1;
+}
+.card-large {
+  flex: 1 0 95%;
+  height: 500px;
+  width: 300px;
+}
+.card-large,
+.card-small {
+  border: 6px solid black;
+  position: relative;
+  transition: border 0.2s, transform 0.2s;
+}
+.card-small {
+  height: 300px;
+  flex: 1 0 45%;
+}
+.card-title {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* CONTACT SECTION */
+.contactlinks {
+  list-style-type: none;
+}  
+.contactlinks a {
+  font-size: 80px;
+  padding: 10px;
+  color: var(--mainText);
+}
+.contactlinks a:hover {
+  color: var(--headerHoverText);
+}

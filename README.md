@@ -1,4 +1,4 @@
-# practice-portfolio
+# dc-studentportfolio
 This is a homework assignment for UCF Coding Bootcamp.
 <h1>👨‍💻 Mission</h1>
 <p>Create an portfolio page to show off my skills.</p>

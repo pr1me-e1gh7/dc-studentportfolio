@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE-edge">
-  <meta name="viewport" content="width-device-width, initial=scale=1.0">
-  <title>DC Professional Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DC Portfolio</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <!-- Favicon -->
@@ -19,82 +20,130 @@
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-<!-- Header/Nav Bar -->
+  <!-- NAVBAR -->
   <header>
-    <h1>DC's Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="#aboutme"><i class="fas fa-user"></i> About Me</a></li>
-        <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
-        <li><a href="#contact"><i class="fas fa-address-card"></i> Contact</a></li>
-        <li><a href="https://drive.google.com/file/d/157yu4DMGOO1Qx-D4fQ_UF0BXG1HgMQ5S/view?usp=sharing" target="_blank"><i class="fas fa-briefcase"></i> Resume</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <h1 class="ms-2"><a href="https://github.com/pr1me-e1gh7" target="_blank">David Caro</a></h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul id="navlist">
+            <li><a href="#aboutme"><i class="fas fa-user"></i> About Me</a></li>
+            <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+            <li><a href="#contact"><i class="fas fa-address-card"></i> Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
-  <!-- Hero Img -->
+  <!-- BANNER -->
   <figure class="hero">
     <img src="./assets/images/dcphoto.jpg" alt="logo image">
     <article class="hero-content">
-      <h2>David Caro</h2>
-      <p>Software + Web Developer</p>
-      <p>from Orlando, FL</p>
+      <h2>Hello there, I'm David 👋</h2>
+      <p>Your Friendly-Neighborhood Web Developer</p>
+      <p>Residing in Orlando, FL</p>
     </article>
   </figure>
+  <!-- MAIN CONTENT -->
   <main>
-    <!-- About Me -->
+    <!-- ABOUT ME -->
     <section id="aboutme">
       <h2 class="section-left">About Me</h2>
       <article class="section-right">
-        <p>I'm a full-stack web developer that's currently residing in Orlando, FL.
-          Having recently graduated from UCF's Coding Bootcamp course, I've become educated in HTML, CSS, JavaScript, Node.JS, React.JS,
-          and other programming languages that'll assist me in any future web development jobs.</p>
+        <h4>Background</h4>
+          <p>Full-stack web developer using a background in amateur graphic design to focus on front-end development.
+          Born and raised in Orlando, FL, I've recently graduated from UCF's Coding Bootcamp course, and I'm more than prepared to assist
+          your web team with whatever challenge your clients may present! I've become educated in HTML, CSS, JavaScript, Node.JS, React.JS, and other
+          programming languages that'll assist me in any future web development jobs.</p>
+        <h4>My Motivation</h4>
+          <p>What drives me to pursue a career in coding is the opportunity to create a life for myself in which I can practice doing what I love
+          without having to worry daily about my ability to take care of my family financially in these trying times.</p>
+        <h4>Why Should You Hire Me?</h4>
+          <p>I believe you should consider hiring me for
+          (1) the fresh perspective I'd bring to the team,
+          (2) my newly-acquired coding skills I've worked painstakingly hard on to obtain,
+          (3) my organization skills, and 
+          (4) my ability to collaborate kindly, timely, and efficiently in a team.</p>
+        <h4>My Long Term Career Goals</h4>
+          <p>I'd like to build a lifetime career in creating aesthetically-pleasing sites that utilize strategic placement of content and intuitive UI
+          to make for an accurate and fantastical representation of each client's dream website that is simple and easy to understand.
+          I aspire to work my way up from a beginner front-end web developer to a project manager within the next 8-10 years,
+          or sooner depending on your the opportunities that present themselves.</p>
       </article>
     </section>
     <!-- PROJECTS -->
     <section id="projects">
-      <h2 class="section-left">Projects</h2>
+      <h2 class="section-left"><a href="https://github.com/pr1me-e1gh7?tab=repositories" target="_blank" title="My Repos">Projects</a></h2>
         <div class="section-right">
           <div class="section-content flex">
-            <!-- ComicStans -->
-            <figure class="card-large">
-                <a href="https://comicstans.herokuapp.com/" target="_blank">
-                    <img class="card-image" src="./assets/images/comicstans-preview.png"></a>
-                <article class="card-content">
-                    <h3 class="card-title">ComicStans</h3></article></figure>
             <!-- Fourstor -->
-            <figure class="card-small">
-              <a href="https://pr1me-e1gh7.github.io/password-generator/" target="_blank">
-                  <img class="card-image" src="./assets/images/fourstorProject.png"></a>
+            <figure class="card-large">
+              <a href="https://pr1me-e1gh7.github.io/fourstor/" target="_blank" title="Click here for project deployment">
+                <img class="card-image" src="./assets/images/fourstor-preview.gif"></a>
               <article class="card-content">
-                  <h3 class="card-title">fourSTOR</h3></article></figure>
+                <h3 class="card-title">
+                  <a href="https://github.com/pr1me-e1gh7/fourstor" title="Click here for project repo">fourSTOR</a>
+                </h3>
+              </article>
+            </figure>
             <!-- Password Generator -->
             <figure class="card-small">
-                <a href="https://pr1me-e1gh7.github.io/password-generator/" target="_blank">
-                    <img class="card-image" src="./assets/images/pwGenerator.png"></a>
-                <article class="card-content">
-                    <h3 class="card-title">Password Generator</h3></article></figure>
+              <a href="https://pr1me-e1gh7.github.io/password-generator/" target="_blank" title="Click here for project deployment">
+                  <img class="card-image" src="./assets/images/pwGenerator.png"></a>
+              <article class="card-content">
+                <h3 class="card-title">
+                  <a href="https://github.com/pr1me-e1gh7/password-generator" title="Click here for project repo">Password Generator</a>
+                </h3>
+              </article>
+            </figure>
             <!-- Code Quiz -->
             <figure class="card-small">
-              <a href="https://pr1me-e1gh7.github.io/code-quiz/" target="_blank">
-                  <img class="card-image" src="./assets/images/codeQuiz.png"></a>
+              <a href="https://pr1me-e1gh7.github.io/code-quiz/" target="_blank" title="Click here for project deployment">
+                <img class="card-image" src="./assets/images/code-quiz-preview.gif"></a>
               <article class="card-content">
-                  <h3 class="card-title">Code Quiz</h3></article></figure>
+                <h3 class="card-title">
+                  <a href="https://github.com/pr1me-e1gh7/code-quiz" title="Click here for project repo">Code Quiz</a>
+                </h3>
+              </article>
+            </figure>
             <!-- Weather Dashboard -->
             <figure class="card-small">
-              <a href="https://pr1me-e1gh7.github.io/weather-dashboard/" target="_blank">
-                  <img class="card-image" src="./assets/images/weatherDashboard.png"></a>
+              <a href="https://pr1me-e1gh7.github.io/weather-dashboard/" target="_blank" title="Click here for project deployment">
+                <img class="card-image" src="./assets/images/weather-dashboard-preview.gif"></a>
               <article class="card-content">
-                  <h3 class="card-title">Weather Dashboard</h3>
+                <h3 class="card-title">
+                  <a href="https://github.com/pr1me-e1gh7/weather-dashboard" title="Click here for project repo">Weather Dashboard</a>
+                </h3>
+              </article>
+            </figure>
+            <!-- Day Planner -->
+            <figure class="card-small">
+              <a href="https://pr1me-e1gh7.github.io/day-planner/" target="_blank" title="Click here for project deployment">
+                <img class="card-image" src="./assets/images/day-planner-preview.gif"></a>
+              <article class="card-content">
+                <h3 class="card-title">
+                  <a href="https://github.com/pr1me-e1gh7/day-planner" title="Click here for project repo">Day Planner</a>
+                </h3>
+              </article>
+            </figure>
           </div>
         </div>
       </section>
-    <!-- Contact -->
+    <!-- CONTACT -->
     <section id="contact">
       <h2 class="section-left">Contact</h2>
       <article class="section-right flex flex-center contactlinks">
-          <a href="https://github.com/pr1me-e1gh7" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/david-caro-891b8a223/" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="mailto:dcaro1996@yahoo.com"><i class="fas fa-envelope"></i></a>
+          <!-- Github -->
+          <a href="https://github.com/pr1me-e1gh7" target="_blank" title="My Github"><i class="fab fa-github"></i></a>
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/davidanthonycaro/" target="_blank" title="My LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <!-- Resume -->
+          <a href="https://drive.google.com/file/d/157yu4DMGOO1Qx-D4fQ_UF0BXG1HgMQ5S/view?usp=sharing" target="_blank" title="My Resume"><i class="fas fa-file-alt"></i></a>
+          <!-- Email -->
+          <a href="mailto:dcaro1996@yahoo.com" title="My Email"><i class="fas fa-envelope"></i></a>
       </article>
     </section>
   </main>
